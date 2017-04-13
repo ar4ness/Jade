@@ -1,0 +1,36 @@
+.black-block {
+  width: 100%;
+  background-color: #0a0a0a;
+  height: 250px;
+  padding: 50px 30px;
+  margin-bottom: 25px ;
+  a {
+    color: #f9ecea;
+  }
+  .white {
+    width: 100px;
+    height: 100px;
+    background-color: #f9ecea;
+  }
+  .menu {
+    background-color: #00cc66;
+    ul {
+      margin: 0;
+      padding-right: 20px;
+      li {
+        margin: 0;
+        list-style: none;
+        display: inline-block;
+      }
+    }
+  }
+}
+.grey-block {
+  width: 100%;
+  background-color: #8a8a8a;
+  height: 750px;
+}
+.blue-block {
+  width: 100%;
+  background-color: #34748a;
+}

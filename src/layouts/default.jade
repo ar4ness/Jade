@@ -8,13 +8,13 @@ html
     link(rel="stylesheet", href="/assets/css/app.css")
 
   body
-
-    block header
-      header
-        h1 layout header
-    block content
-      include ../pages/part
-    block list
-    block footer
-    block home
-    script(src="/assets/js/app.js")
+  include ../data/variables
+  block header
+    header
+      h1 layout header
+  block content
+    //-include ../pages/part
+  block list
+  block footer
+  block home
+  script(src="/assets/js/app.js")

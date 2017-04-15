@@ -1,0 +1,21 @@
+//
+   Created by student on 15-Apr-17.
+
+extends ../layouts/default.jade
+
+block content
+  include ../pages/array
+  div.row.large-up-3.house-block
+    each item in houseObj
+      div.columns
+        div.house-holder
+          div
+            each item in imgHouse
+              img(src="#{imgPath2}#{item}")
+          div
+            h2 #{item.titleName}
+            h4 #{item.addressName}
+            p #{item.textName}
+
+          div.btn-holder
+            a(href="#").btn-green Детальніше

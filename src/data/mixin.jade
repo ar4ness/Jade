@@ -1,0 +1,26 @@
+//
+  mixin name
+    p some text
+//
+  mixin descript(titleName, addressName,)
+    "Цокольне приміщення": "93,7 м2,  154,5 м2",  
+    "Перший поверх": "101,5 м2, 146,5 м2",
+    "Другий поверх": "108,3 м2, 122,5 м2",
+    "Типовий поверх": "",
+    "двокімнатні": "63,10м2, 66,8м2",
+    "трикімнатні": "87,10м2"
+//
+  mixin name1
+    dt Цокольне приміщення
+
+  mixin imgs
+    each item in imgHouse
+      img #{imgPath/item}
+//
+  mixin house(img, titleName, addressName, text)
+    each item in houseObj
+      each item in imgHouse
+        img #{imgPath/item}
+      titleName: "item.titleName"
+      addressName: "item.addressName"
+      text: "item.text"
